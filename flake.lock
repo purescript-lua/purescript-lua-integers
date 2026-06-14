@@ -701,11 +701,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781426854,
-        "narHash": "sha256-TrqJ5GNiscEbQdx5O2ipuC8VFTlmxWLjOi34eMSIbb4=",
+        "lastModified": 1781449244,
+        "narHash": "sha256-evfLWZ+i55b0cSfd/jgU5mXuBg2KDEP5WhEj2iuzIiM=",
         "owner": "Unisay",
         "repo": "purescript-lua",
-        "rev": "c1b9dd0f2ecfe89c5523b8385a12caa5459bc133",
+        "rev": "94c13cecd1146494de56196a7badb3b1374d364d",
         "type": "github"
       },
       "original": {
