@@ -22,7 +22,7 @@ return {
   toStringAs = (function(radix)
     return function(i)
       local floor, insert = math.floor, table.insert
-      n = floor(i)
+      local n = floor(i)
       if radix == 10 then return tostring(n) end
       local digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
       local t = {}
