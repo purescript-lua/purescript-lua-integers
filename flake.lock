@@ -703,13 +703,13 @@
       "locked": {
         "lastModified": 1781449244,
         "narHash": "sha256-evfLWZ+i55b0cSfd/jgU5mXuBg2KDEP5WhEj2iuzIiM=",
-        "owner": "Unisay",
+        "owner": "purescript-lua",
         "repo": "purescript-lua",
         "rev": "94c13cecd1146494de56196a7badb3b1374d364d",
         "type": "github"
       },
       "original": {
-        "owner": "Unisay",
+        "owner": "purescript-lua",
         "repo": "purescript-lua",
         "type": "github"
       }
