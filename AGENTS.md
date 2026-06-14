@@ -1,6 +1,6 @@
 # AGENTS.md
 
-A PureScript→Lua FFI fork in the [`purescript-lua`](https://github.com/Unisay/purescript-lua) package set. Generated code targets **Lua 5.1**.
+A PureScript→Lua FFI fork in the [`purescript-lua`](https://github.com/purescript-lua/purescript-lua) package set. Generated code targets **Lua 5.1**.
 
 ## Commands
 
@@ -34,12 +34,12 @@ A bare `function … end` or an unparenthesised expression fails to parse.
 
 ## Toolchain
 
-`flake.nix` pins everything through [`purescript-overlay`](https://github.com/thomashoneyman/purescript-overlay): purs 0.15.16 (`purs-bin.purs-0_15_16`), spago 0.21.0 (`spago-bin.spago-0_21_0`), Lua 5.1 (`lua51Packages`). The `pslua` input tracks `github:Unisay/purescript-lua`; keep `flake.lock` reasonably current, since a long-stale pslua pin won't create the `--lua-output-file` directory and CI fails.
+`flake.nix` pins everything through [`purescript-overlay`](https://github.com/thomashoneyman/purescript-overlay): purs 0.15.16 (`purs-bin.purs-0_15_16`), spago 0.21.0 (`spago-bin.spago-0_21_0`), Lua 5.1 (`lua51Packages`). The `pslua` input tracks `github:purescript-lua/purescript-lua`; keep `flake.lock` reasonably current, since a long-stale pslua pin won't create the `--lua-output-file` directory and CI fails.
 
 ## Releasing
 
-Tag-driven, with no GitHub Release or changelog entry. The full conventions live in the [package-set repo](https://github.com/Unisay/purescript-lua-package-sets/blob/master/CONTRIBUTING.md): push an annotated tag on `master`, bump this fork's `version` in the package set's `src/packages.dhall`, refresh `latest-compatible-sets.json`, and push a `psc-*` set tag.
+Tag-driven, with no GitHub Release or changelog entry. The full conventions live in the [package-set repo](https://github.com/purescript-lua/purescript-lua-package-sets/blob/master/CONTRIBUTING.md): push an annotated tag on `master`, bump this fork's `version` in the package set's `src/packages.dhall`, refresh `latest-compatible-sets.json`, and push a `psc-*` set tag.
 
 ## Decisions
 
-Cross-cutting decisions are recorded as ADRs in the [package-set repo](https://github.com/Unisay/purescript-lua-package-sets/tree/master/docs/adr). Read them before a decision that affects the set, and add one after making such a decision.
+Cross-cutting decisions are recorded as ADRs in the [package-set repo](https://github.com/purescript-lua/purescript-lua-package-sets/tree/master/docs/adr). Read them before a decision that affects the set, and add one after making such a decision.

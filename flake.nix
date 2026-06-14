@@ -8,7 +8,7 @@
       url = "github:thomashoneyman/purescript-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    pslua.url = "github:Unisay/purescript-lua";
+    pslua.url = "github:purescript-lua/purescript-lua";
   };
 
   outputs = { self, nixpkgs, flake-utils, purescript-overlay, pslua }:
