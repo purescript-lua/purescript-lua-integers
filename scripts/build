@@ -3,7 +3,7 @@ set -euo pipefail
 
 echo "Building..."
 
-spago build -u '-g corefn'
+spago build
 
 pslua --foreign-path . --ps-output output --entry Data.Int --lua-output-file dist/Data.Int.lua
 pslua --foreign-path . --ps-output output --entry Data.Int.Bits --lua-output-file dist/Data.Int.Bits.lua
